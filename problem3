@@ -1,0 +1,15 @@
+function countChars(S){
+let count ={};
+let result ="";
+for(let char of S){
+  if(count[char]){
+    count[char] +=1;
+  }else{
+    count[char] =1;
+  }
+}
+for(let char in count){
+ result +=char +count[char]; 
+}
+console.log(result);
+}
